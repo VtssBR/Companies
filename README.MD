@@ -29,7 +29,7 @@ Primeiramente é necessario instalar todos os frameworks e modulos utilizados
 
 * Inicialize um arquivo package.json: `npm init -y`  
 
-* Instale as dependências necessárias:`npm install express sequelize mysql2 express-handlebars `
+* Instale as dependências necessárias:`npm install express sequelize mysql2 express-handlebars body-parser `
 
 Lembre-se de baixar e configurar o banco de dados MySQL conforme necessário.
 
