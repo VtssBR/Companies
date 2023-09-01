@@ -36,3 +36,23 @@ Lembre-se de baixar e configurar o banco de dados MySQL conforme necessário.
 A aplicação está configurada para rodar localmente na porta 8080. Para visualizá-la, basta acessar o endereço: http://localhost:8080
 
 Após a inicialização e o cadastro de registros, você poderá visualizar os dados no WorkBench.
+## Imagens 
+
+### Cadastro
+![Preview](./.github/Cadastro.png)
+
+![Preview](./.github/Cadastro2.png)
+
+### Registros
+![Preview](./.github/Registro.png)
+
+### Excluindo Registro
+
+![Preview](./.github/Excluido.png)
+
+### Banco de Dados
+![Preview](./.github/Banco.png)
+
+### Excluido no Banco de Dados
+![Preview](./.github/Banco2.png)
+

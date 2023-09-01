@@ -19,6 +19,6 @@ const Cadastro = db.conn.define('user',{
 }
 );
 // FORÇAR A CRIAÇÃO DA TABELA 
-// Cadastro.sync({force: true});
+//Cadastro.sync({force: true});
 
 module.exports = Cadastro;
