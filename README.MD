@@ -31,7 +31,7 @@ Primeiramente é necessario instalar todos os frameworks e modulos utilizados
 
 * Instale as dependências necessárias:`npm install express sequelize mysql2 express-handlebars body-parser `
 
-*Inicie o projeto com: `node app.js`
+* Inicie o projeto com: `node app.js`
 
 Lembre-se de baixar e configurar o banco de dados MySQL conforme necessário.
 
