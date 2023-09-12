@@ -13,7 +13,7 @@
     --hover2-color: #9959ff;
 }
 
-body{
+body {
     background-color: var(--bg-color);
     color: var(--font-color);
     font-family: 'Roboto', sans-serif;
@@ -34,13 +34,14 @@ body{
     border: 1px solid #333333;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--purple-color);
 }
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -48,7 +49,8 @@ h1{
     align-items: center;
 }
 
-.inputs{
+.inputs,
+.buttoncadastrar {
     background-color: var(--bg-color);
     height: 3rem;
     border: none;
@@ -56,38 +58,27 @@ h1{
     padding: 1rem;
     color: white;
     font-size: 1.2rem;
-
 }
 
-.buttoncadastrar{
-    background-color: var(--bg-color);
-    color: white;
-    font-size: 1.2rem;
-    padding: 1rem;
-    border: none;
-    border-radius: 0.5rem;
+.buttoncadastrar {
     width: 12rem;
-    font-family: 'Roboto', sans-serif;
 }
-.buttoncadastrar:hover{
+
+.buttoncadastrar:hover,
+.visualizar:hover {
     background-color: var(--hover-color);
     cursor: pointer;
 }
 
-
-.visualizar{
+.visualizar {
     color: var(--purple-color);
     font-size: 1rem;
     text-decoration: none;
 }
 
-.visualizar:hover{
-    color: white;
-    
-}
-
 /* READ STYLES */
-.content{
+
+.content {
     max-width: 40rem;
     margin: 0 auto;
     padding: 2rem;
@@ -98,11 +89,12 @@ h1{
     gap: 0.4rem;
 }
 
-.text{
+.text {
     font-size: 1.2rem;
 }
 
-.excluirBtn {
+.excluirBtn,
+.cadastrarBtn {
     background-color: var(--purple-color);
     border: none;
     border-radius: 0.5rem;
@@ -110,32 +102,20 @@ h1{
     color: white;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
 
-.excluirBtn:hover {
-    cursor: pointer;
+.excluirBtn:hover,
+.cadastrarBtn:hover {
     background-color: var(--hover2-color);
 }
 
-
-.cadastrarBtn{
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    color: white;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+.cadastrarBtn {
     margin-top: 1rem;
     padding: 0.8rem;
 }
 
-.cadastrarBtn:hover{
-    background-color: var(--hover-color);
-    cursor: pointer;
-}
-
-.textContent{
+.textContent {
     display: flex;
     justify-content: space-between;
     align-items: center;

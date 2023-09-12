@@ -1,0 +1,15 @@
+<main class="mainSection">
+  <h1>Atualizar Empresas</h1>
+  <form class="formulario" action="/update" method="POST">
+    <input type="text" class="inputs" name="razaoSocial" value="{{registro.razaoSocial}}">
+
+    <input type="text" class="inputs" name="endereco" value="{{registro.endereco}}">
+
+    <input type="text" class="inputs" name="nome" value="{{registro.nome}}">
+    
+    <input type="text" class="inputs" name="email" value="{{registro.email}}">
+    
+    <button type="submit" class="buttoncadastrar">Atualizar</button>
+    <a href="/visualizarCadastro" class="visualizar">Visualizar Cadastros</a>
+  </form>
+</main>

@@ -51,6 +51,38 @@ app.get('/read', function(req, res){
   })
 });
 
+app.get('/att/:id', function(req, res){
+  const cadastroId = req.params.id;
+
+  Cadastro.findOne({
+    where: { id: cadastroId }
+  }).then(function(registro){
+      res.render('att', { registro: registro });
+  }).catch(function(error){
+    console.error('Erro ao buscar registro:', error);
+  });
+});
+
+app.post('/update/:id', function (req, res) {
+  const cadastroId = req.params.id; // Obtenha o ID a partir dos parâmetros da URL
+
+  // Use o método update para atualizar o registro com base no ID
+  Cadastro.update({
+    razaoSocial: req.body.razaoSocial,
+    endereco: req.body.endereco,
+    nome: req.body.nome,
+    email: req.body.email
+  }, {
+    where: { id: cadastroId } // Condição para a atualização
+  })
+  .then(function () {
+    res.redirect('/read');
+  })
+  .catch(function (err) {
+    res.send("Erro ao atualizar o registro: " + err);
+  });
+});
+
 app.get('/delete/:id', function(req, res){
     Cadastro.destroy({
       where: {'id': req.params.id}
